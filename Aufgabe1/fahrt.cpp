@@ -9,7 +9,8 @@ void Fahrt::anzeigen() {
          << " Kunde " << kunde
          << " holt Fahrzeug am " << abholdatum
          << " ab und bringt es am " << abgabedatum
-         << " zurück" << endl;
+         << " zurück"
+         << " Preis: " << fixed << setprecision(2) << this->mietkosten << endl;
 }
 
 int Fahrt::getNummer() {
@@ -24,7 +25,12 @@ int Fahrt::getAbgabedatum() {
     return abgabedatum;
 }
 
-int Fahrt::getMietkosten()
-{
-
+double Fahrt::getMietkosten() {
+    return mietkosten;
 }
+
+void Fahrt::setMietkosten(double mietkosten) {
+    this->mietkosten = mietkosten;
+}
+
+

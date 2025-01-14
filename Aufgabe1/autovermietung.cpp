@@ -10,12 +10,12 @@ bool Autovermietung::mietwagenSuchen(int i) {
 
 Autovermietung::Autovermietung() {}
 
-/*Autovermietung::~Autovermietung() {
+Autovermietung::~Autovermietung() {
     for(Mietwagen* fahrzeug: fahrzeuge) {
         delete fahrzeug;
     }
     cout << "Hasta la vista!" << endl;
-}*/
+}
 
 void Autovermietung::dialog() {
     // Variablen deklarieren
@@ -32,6 +32,7 @@ void Autovermietung::dialog() {
         cout << "4: Fahrt löschen" << endl;
         cout << "5: Fahrzeug hinzufügen" << endl;
         cout << "6: Alle Fahrzeuge ausgeben" << endl;
+        cout << "7: umsatzliste" << endl;
         cout << "0: Programm beenden" << endl;
 
         char eingabe;

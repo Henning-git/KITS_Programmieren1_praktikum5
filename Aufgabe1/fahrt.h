@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ private:
     string kunde;
     int abholdatum;
     int abgabedatum;
-    int mietkosten;
+    double mietkosten;
 
 public:
     Fahrt(int n, string k, int ab, int bis);
@@ -20,7 +21,8 @@ public:
     int getNummer();
     int getAbholdatum();
     int getAbgabedatum();
-    int getMietkosten();
+    double getMietkosten();
+    void setMietkosten(double mietkosten);
 };
 
 #endif // FAHRT_H

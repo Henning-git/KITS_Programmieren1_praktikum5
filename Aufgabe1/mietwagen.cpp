@@ -30,6 +30,10 @@ void Mietwagen::anmieten(Fahrt f) {
         return;
     }
 
+    // berechne Mietpreis
+    double miettage = berechneTage(f.getAbgabedatum()) - berechneTage(f.getAbholdatum()) + 1;
+    f.setMietkosten(tagespreis * miettage);
+
     fahrtenbuch.push_back(f);
     cout << "Fahrt gespeichert" << endl;
 }
