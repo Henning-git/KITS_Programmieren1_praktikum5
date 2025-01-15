@@ -28,6 +28,7 @@ public:
     bool nummerPruefen(int nummer);
     bool fahrtLoeschen(int nummer);
     int berechneTage(int datum);
+    double printUmsatz();
 };
 
 #endif // MIETWAGEN_H

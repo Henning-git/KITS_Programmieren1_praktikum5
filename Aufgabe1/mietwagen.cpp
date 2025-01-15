@@ -113,6 +113,16 @@ int Mietwagen::berechneTage(int datum) {
     return (total);
 }
 
+double Mietwagen::printUmsatz() {
+    double umsatz = 0;
+    for(Fahrt fahrt: fahrtenbuch) {
+        umsatz += fahrt.getMietkosten();
+    }
+
+    cout << marke << " " << kennzeichen << " Tagespreis: " << tagespreis << " Gesamtumsatz: " << umsatz << endl;
+    return umsatz;
+}
+
 bool Mietwagen::verfuegbarkeitPruefen(Fahrt f) {
     // for each fahrt in fahrtenbuch
     if(fahrtenbuch.size() == 0) {

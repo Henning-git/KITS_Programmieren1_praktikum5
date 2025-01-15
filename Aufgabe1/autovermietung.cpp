@@ -167,6 +167,15 @@ void Autovermietung::dialog() {
         }
         break;
 
+        case '7': {         // Umsatzliste
+            double umsatz = 0;
+            for(Mietwagen* fahrzeug: fahrzeuge) {
+                umsatz += fahrzeug->printUmsatz();
+            }
+            cout << "Unternehmensumsatz: " << umsatz << endl;
+        }
+        break;
+
         case '0':{         // Programm beenden
             return;
             break;
