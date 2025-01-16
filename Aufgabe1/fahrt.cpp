@@ -1,4 +1,6 @@
 #include "fahrt.h"
+#include <iostream>
+#include <iomanip>
 
 Fahrt::Fahrt(int n, string k, int ab, int bis): nummer(n), kunde(k), abholdatum(ab), abgabedatum(bis) {
     cout << "Fahrt erfolgreich erstellt" << endl;

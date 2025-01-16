@@ -1,4 +1,5 @@
 #include "autovermietung.h"
+#include <iostream>
 #include <limits>
 
 bool Autovermietung::mietwagenSuchen(int i) {
@@ -84,7 +85,7 @@ void Autovermietung::dialog() {
                 break;
             }
 
-            Fahrt fahrt = Fahrt(buchungsnummer, kunde, abholdatum, abgabedatum);
+            Fahrt fahrt(buchungsnummer, kunde, abholdatum, abgabedatum);
             mietwagen->anmieten(fahrt);
         }
         break;
